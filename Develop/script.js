@@ -10,6 +10,16 @@ var lowers = confirm("Would you like to include lowercase letters?");
 var numbers = confirm("Would you like to include numbers?");
 var symbols = confirm("Would you like to include special characters?");
 
+// IF no pwd types are selected, this alert will display
+while (!uppers && !lowers && !numbers && !symbols) {
+  alert("You must select at least one character type!");
+  // list of questions to confirm with user
+  uppers = confirm("Would you like to include uppercase letters?");
+  lowers = confirm("Would you like to include lowercase letters?");
+  numbers = confirm("Would you like to include numbers?");
+  symbols = confirm("Would you like to include special characters?");
+}
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
