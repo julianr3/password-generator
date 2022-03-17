@@ -28,6 +28,7 @@ Once the website is launched, you will be alerted with questions to help specify
 ## Credits
 
 Kyle Giuanta https://github.com/kgiunta
+
 Isaak Morales https://github.com/CallMeIce
 
 ## License
