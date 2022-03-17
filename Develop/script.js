@@ -1,4 +1,4 @@
-// Assignment Code
+// Javascript Code
 var generateBtn = document.querySelector("#generate");
 // this launches a prompt for user-input password length requirement
 var length = Number(prompt("How many characters would you like to use for your password?"));
@@ -20,14 +20,33 @@ while (!uppers && !lowers && !numbers && !symbols) {
   symbols = confirm("Would you like to include special characters?");
 }
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+window.addEventListener('load', function() {
+  generateNewPassword();
+});
 
-  passwordText.value = password;
+function generateNewPassword() {
+  var password = "";
 
+  var allowed = {};
+  if (uppers) password += rando(allowed.uppers = "QWERTYUIOPASDFGHJKLZXCVBNM");
+  if (lowers) password += rando(allowed.lowers = "qwertyuiopasdfghjklzxcvbnm");
+  if (numbers) password += rando(allowed.numbers = "1234567890");
+  if (symbols) password += rando(allowed.symbols = "!@#$%^&*(){}[]=<>/,.");
+
+  for (var i = password.length; i < length; i++) password += rando(rando(allowed).value);
+
+  document.getElementById("password").value = randoSequence(password).join("");
 }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+// // Write password to the #password input
+// function writePassword() {
+//   var password = generatePassword();
+//   var passwordText = document.querySelector("#password");
+
+//   passwordText.value = password;
+
+// }
+
+
+// // Add event listener to generate button
+// generateBtn.addEventListener("click", writePassword);
