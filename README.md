@@ -21,9 +21,9 @@ This tool is embedded in a URL.
 
 ## Usage
 
-Once the website is launch, you will be alerted with questions to help specify specific password requirements.
+Once the website is launched, you will be alerted with questions to help specify specific password requirements.
 
-![Image of website](assets/images/Portfolio.png)
+![Image of website](assets/images/passwordgenerator.png)
 
 ## Credits
 
