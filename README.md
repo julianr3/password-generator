@@ -17,11 +17,12 @@
 
 ## Installation
 
-This tool is embedded in a URL. 
+This tool is embedded in a URL. No installation required. 
 
 ## Usage
 
-Once the website is launched, you will be alerted with questions to help specify specific password requirements.
+Once the website is launched, navigate to the generate button then click once. A series of questions will processed to tailor the 
+password to the users specifications. Code will generate automatically after questions are completed.
 
 ![Image of website](assets/images/passwordgenerator.png)
 

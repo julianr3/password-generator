@@ -53,7 +53,7 @@ function generatePassword() {
     var randomCharacter = selectedSet[randomNumber]
     password = password + randomCharacter
   }
-
+// Returns results based on selections made
   return password;
 }
 
@@ -63,10 +63,10 @@ function generatePassword() {
 var generateBtn = document.querySelector("#generate");
 
 function writePassword() {
-  // var password = "";
+
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
 }
-
+// initiates prompts for new password
 generateBtn.addEventListener("click", writePassword);
